@@ -36,14 +36,26 @@ const App = () => {
   }
 
   return (
-
+    /*
+          <section id="goal-form">
+            <CourseInput onAddGoal={addGoalHandler} />
+          </section>
+          <section id="goals">
+            {content}
+          </section> 
+           
+          This code wont compile becuase React has a rule
+          that requires JSX elements to be wrapped in one 
+          enclosing tag; example: "div"
+          */
+    <div>
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
       <section id="goals">
         {content}
       </section>
-
+    </div>
   );
 };
 
